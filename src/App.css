@@ -1,0 +1,190 @@
+
+/* ============================================
+   RESET E CONFIGURAÇÕES GLOBAIS
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  background-color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #49B3FC;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  background: linear-gradient(135deg, #ededed 0%, #f8f9fa 100%);
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 24px;
+  color: #555;
+  max-width: 700px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: #49B3FC;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(73, 179, 252, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #3a9de0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(73, 179, 252, 0.4);
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 80px 50px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(73, 179, 252, 0.2);
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.rodape {
+  background-color: #222;
+  color: #ededed;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 80px;
+}
+
+.rodape p {
+  font-size: 16px;
+}
+
+/* ============================================
+   RESPONSIVO (MOBILE)
+   ============================================ */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero h2 {
+    font-size: 18px;
+  }
+  
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
