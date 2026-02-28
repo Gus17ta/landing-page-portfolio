@@ -1,8 +1,8 @@
-import './App.css'
 import Header from './componentes/Header.jsx'
 import Hero from './componentes/Hero.jsx'
 import Cards from './componentes/Cards.jsx'
 import Footer from './componentes/Footer.jsx'
+import './App.css'
 
 function App() {
   return (
